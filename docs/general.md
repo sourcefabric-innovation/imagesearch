@@ -22,6 +22,6 @@
 * We should get a description how to make a deployment, backup and recovery.
 
 * Return proper HTTP status codes for every request;
-  i.e. on a failure, 40x status code should be returned, with reason phrase
+  e.g. on a failure, 40x status code should be returned, with reason phrase
   simply describing what got wrong.
 
