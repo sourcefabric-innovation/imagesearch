@@ -6,7 +6,7 @@ Example cases for the API
 
 Taking the descriptors from any image provided, the image is specified via URL.
 
-GENERATE or POST to:
+GENERATE or GET to:
 /descriptors/
 ```json
 {
@@ -34,7 +34,7 @@ PUT to:
 }
 ```
 
-SEARCH or POST to:
+SEARCH or GET to:
 /index/{index_id}/image/
 ```json
 {
@@ -56,7 +56,7 @@ not necessary in the first iteration.
 
 This (static) index would be precreated and only used for tag-suggesting.
 
-SUGGEST or POST to:
+SUGGEST or GET to:
 /index/{index_id}/tags/
 ```json
 {
