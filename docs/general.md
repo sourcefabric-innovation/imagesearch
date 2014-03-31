@@ -21,7 +21,7 @@ Notices:
 
 * we should get a description how to make a deployment, backup and recovery.
 
-* on a failure, 40x status codes should be returned, with reason phrases
+* on a failure, 40x status code should be returned, with reason phrase
   simply describing what got wrong.
 
 
