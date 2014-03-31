@@ -1,27 +1,27 @@
+**Notices:**
 
-Notices:
+* Data (for both requests and responses) transferred as json.
 
-* data (for both requests and responses) transferred as json.
-
-* the system should be able to have several separate indexes;
+* The system should be able to have several separate indexes;
   requests (individually) specify which index to use.
 
-* the index with tag-suggestion abilities should be a precreated one;
+* The index with tag-suggestion abilities should be a precreated one;
   we probably will not put our own images and tags into it, at least in the first iteration.
 
-* to be able to start/stop the system with a standard system startup script;
+* To be able to start/stop the system with a standard system startup script;
   with possibility to set IP address and port to listen at.
 
-* regarding non-GET/POST methods, the system should allow
+* Regarding non-GET/POST methods, the system should allow
   the standard header substitution for the actual method type,
   i.e. via the X-HTTP-Method-Override header on the POST method.
 
-* regarding tags: may be to do it via (integer) Ids,
-  so that we can put in some localization by ourselves (in an outer layer).
+* Regarding tags: may be to do it via (integer) Ids,
+  so that we can put in some localization by ourselves (in an outer layer);
+  otherwise we need to know how we can handle localization of tags.
 
-* we should get a description how to make a deployment, backup and recovery.
+* We should get a description how to make a deployment, backup and recovery.
 
-* on a failure, 40x status code should be returned, with reason phrase
+* Return proper HTTP status codes for every request;
+  i.e. on a failure, 40x status code should be returned, with reason phrase
   simply describing what got wrong.
-
 
